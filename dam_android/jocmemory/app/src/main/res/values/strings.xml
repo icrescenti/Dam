@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TutorialMemory</string>
+    <string name="boto_init_play">▶</string>
+    <string name="boto_init_quit">Sortir</string>
+    <string name="boto_joc_reinit">Reiniciar</string>
+    <string name="boto_joc_quit">Sortir</string>
+</resources>
