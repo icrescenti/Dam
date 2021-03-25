@@ -15,7 +15,7 @@
         <Button x:Name="btnAltaLlibre" Content="Alta Llibre" HorizontalAlignment="Left" Margin="28,63,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnAltaLlibre_Click"/>
         <Button x:Name="btnAltaCategoria" Content="Alta Categoria" HorizontalAlignment="Left" Margin="162,63,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnAltaCategoria_Click"/>
         <Button x:Name="btnModCategoria" Content="Modificacio Categoria" HorizontalAlignment="Left" Margin="162,98,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnModCategoria_Click"/>
-        <Button x:Name="btnEliminarCategoria" Content="Eliminar Categoria" HorizontalAlignment="Left" Margin="162,133,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
+        <Button x:Name="btnEliminarCategoria" Content="Eliminar Categoria" HorizontalAlignment="Left" Margin="162,133,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnEliminarCategoria_Click"/>
         <Button x:Name="btnModLlibre" Content="Modificacio Llibre" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnModLlibre_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar Llibre" HorizontalAlignment="Left" Margin="28,133,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnEliminar_Click"/>
 

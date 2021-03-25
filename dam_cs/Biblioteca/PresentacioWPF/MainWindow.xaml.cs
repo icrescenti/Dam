@@ -109,5 +109,10 @@ namespace PresentacioWPF
             dataGridView1.ItemsSource = new Negocio.Managment.CategoriaManagment().ObtenerCategorias();
 
         }
+
+        private void btnEliminarCategoria_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
