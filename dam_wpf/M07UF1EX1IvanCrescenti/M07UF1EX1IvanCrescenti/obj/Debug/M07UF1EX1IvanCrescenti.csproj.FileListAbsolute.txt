@@ -1,0 +1,17 @@
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\bin\Debug\M07UF1EX1IvanCrescenti.exe.config
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\bin\Debug\M07UF1EX1IvanCrescenti.exe
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\bin\Debug\M07UF1EX1IvanCrescenti.pdb
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.csprojAssemblyReference.cache
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\MainWindow.g.cs
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\App.g.cs
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti_MarkupCompile.cache
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti_MarkupCompile.lref
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\MainWindow.baml
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.g.resources
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.Properties.Resources.resources
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.csproj.GenerateResource.cache
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.csproj.CoreCompileInputs.cache
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.exe
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\M07UF1EX1IvanCrescenti.pdb
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\FinestraAjudaxaml.g.cs
+D:\DAM2\APRAT-WPF\icrescenti\dam_wpf\UF1\M07UF1EX1IvanCrescenti\M07UF1EX1IvanCrescenti\obj\Debug\FinestraAjudaxaml.baml

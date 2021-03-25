@@ -1,0 +1,18 @@
+﻿<Window x:Name="Window1" x:Class="Crescenti_Ivan_A01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A01"
+        mc:Ignorable="d"
+        Title="Exercici 1" Height="177" Width="427" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="contingut">
+        <TextBox x:Name="txt_titol" HorizontalAlignment="Left" Height="24" Margin="10,40,0,0" VerticalAlignment="Top" Width="112" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="1"/>
+        <TextBox x:Name="txt_desenvolupador" HorizontalAlignment="Left" Height="24" Margin="127,40,0,0" VerticalAlignment="Top" Width="154" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="2"/>
+        <TextBox x:Name="txt_any" HorizontalAlignment="Left" Height="24" Margin="286,40,0,0" VerticalAlignment="Top" Width="112" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="3" LostFocus="txt_any_LostFocus"/>
+        <Button x:Name="btn_titolcomplet" Content="Titol Complert" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="303,103,0,0" Height="23" TabIndex="4" Click="btn_titolcomplet_Click"/>
+        <Label x:Name="lbl_titol" Content="Títol" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Width="112" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_desenvolupador" Content="Desenvolupador" HorizontalAlignment="Left" Margin="148,15,0,0" VerticalAlignment="Top" Width="112" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label x:Name="lbl_any" Content="Any publicació" HorizontalAlignment="Left" Margin="286,15,0,0" VerticalAlignment="Top" Width="112" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

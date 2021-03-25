@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ComunicacioActivities</string>
+    <string name="benvingut">Benvolgut</string>
+    <string name="descdonegut">Desconegut</string>
+    <string name="login">Inicia Sessio</string>
+    <string name="email">Correu Electronic</string>
+    <string name="menudia">MENÚ DEL DIA</string>
+    <string name="quisom">QUI SOM?</string>
+    <string name="sessioiniciada">Sessió Iniciada</string>
+    <string name="sessioiniciada_msg">Sessió iniciada com a </string>
+    <string name="contrasenya_incorrecta">Contrasenya incorrecte</string>
+    <string name="contrasenya_incorrecta_msg">La contrasenya ha de ser un valor numeric!</string>
+    <string name="email_incorrecte">Email incorrecte</string>
+    <string name="email_incorrecte_msg">El email no es valid, comprova que estigui escrit correctament</string>
+    <string name="acceptar">Dacord</string>
+    <string name="quisom_msg">Som un restaurant especialitzat en menjar italia, ubicat en el centre de girona, fem la millor pasta de tota la comarca</string>
+</resources>

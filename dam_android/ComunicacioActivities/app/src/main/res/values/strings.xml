@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ComunicacioActivities</string>
+    <string name="benvingut">Welcome</string>
+    <string name="descdonegut">Unknown</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="menudia">DAILY MENU</string>
+    <string name="quisom">About</string>
+    <string name="sessioiniciada">Logged in</string>
+    <string name="sessioiniciada_msg">Logged in as</string>
+    <string name="contrasenya_incorrecta">Wrong Password</string>
+    <string name="contrasenya_incorrecta_msg">The password must be a numeric value</string>
+    <string name="email_incorrecte">Wrong Email</string>
+    <string name="email_incorrecte_msg">Wrong email, please type a valid email</string>
+    <string name="acceptar">Accept</string>
+    <string name="quisom_msg">We are an italian restaurant, located in the center of girona, we make the best pasta on the province!</string>
+</resources>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee>
+    <FirstName>Andrew</FirstName>
+    <LastName>Fuller</LastName>
+    <Address>908 W. Capital Way</Address>
+    <PostalCode>98401</PostalCode>
+    <City>Tacoma</City>
+    <Country>US</Country>
+    <PhotoPath>img/John_Tran.jpg</PhotoPath>
+  </Employee>
+  <Employee>
+    <FirstName>Steven</FirstName>
+    <LastName>Buchanan</LastName>
+    <Address>14 Garrett Hill</Address>
+    <PostalCode>SW1 8JR</PostalCode>
+    <City>London</City>
+    <Country>UK</Country>
+    <PhotoPath>img/darkimage.jpg</PhotoPath>
+  </Employee>
+  <Employee>
+    <FirstName>Apex</FirstName>
+    <LastName>Davolio</LastName>
+    <Address>507 - 20th Ave. E. Apt. 2A</Address>
+    <PostalCode>98122</PostalCode>
+    <City>Seattle</City>
+    <Country>US</Country>
+    <PhotoPath>img/webinar.png</PhotoPath>
+  </Employee>
+  <Employee>
+    <FirstName>Margaret</FirstName>
+    <LastName>Peacock</LastName>
+    <Address>4110 Old Redmond Rd.</Address>
+    <PostalCode>98052</PostalCode>
+    <City>Redmond</City>
+    <Country>US</Country>
+    <PhotoPath>img/mike.jpg</PhotoPath>
+  </Employee>
+  <Employee>
+    <FirstName>Joe</FirstName>
+    <LastName>Leverling</LastName>
+    <Address>722 Moss Bay Blvd.</Address>
+    <PostalCode>98033</PostalCode>
+    <City>Kirkland</City>
+    <Country>US</Country>
+    <PhotoPath>img/joe.jpg</PhotoPath>
+  </Employee>
+</ArrayOfEmployee>

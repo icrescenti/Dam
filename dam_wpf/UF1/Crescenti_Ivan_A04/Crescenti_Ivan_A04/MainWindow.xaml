@@ -1,0 +1,97 @@
+﻿<Window x:Class="Crescenti_Ivan_A04.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A04"
+        mc:Ignorable="d"
+        Title="Menús i barres d'eines (icrescenti)" Height="450" MinHeight="450" Width="800" MinWidth="800" Loaded="Window_Loaded">
+    <Grid>
+        
+        <Menu x:Name="mnu_menu" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="22" Width="auto">
+
+            <MenuItem Header="_Inici">
+                <MenuItem Header="Visualitzar">
+                    <MenuItem x:Name="btn_imatge" Header="Imatge" Click="btn_imatge_Click">
+                        <MenuItem.Icon>
+                            <Image Source="imatges\Imatge.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="btn_video" Header="Video" Click="btn_video_Click">
+                        <MenuItem.Icon>
+                            <Image Source="imatges\Video.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem x:Name="btn_config" Header="Configuració" Click="btn_config_Click">
+                        <MenuItem.Icon>
+                            <Image Source="imatges\Configuracio.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem x:Name="btn_tancar" Header="Tancar" Click="btn_tancar_Click">
+                        <MenuItem.Icon>
+                            <Image Source="imatges\Tancar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+
+            <MenuItem Header="Opcions">
+                <MenuItem x:Name="mostrarbarra" Header="Mostrar barra d'eines" IsCheckable="true" Checked="mostrarbarra_Checked" Unchecked="mostrarbarra_Unchecked"/>
+            </MenuItem>
+
+            <MenuItem Header="A_juda">
+                <MenuItem Name="ajudaonline" Header="Veure Ajuda" Click="ajudaonline_Click"/>
+                <Separator/>
+                <MenuItem Name="finestra_about" Header="Acerca de..." Click="finestra_about_Click"/>
+            </MenuItem>
+
+            <Slider x:Name="sld_tamanylletra" Width="100" ValueChanged="sld_tamanylletra_ValueChanged"/>
+
+        </Menu>
+        
+        <ToolBar x:Name="tbr_eines" HorizontalAlignment="Left" Height="28" Margin="0,22,0,0" VerticalAlignment="Top" Width="151">
+            <Button x:Name="btn_configuracio" HorizontalAlignment="Left" Height="25" Margin="2,0,3,0" VerticalAlignment="Top" Width="25" Click="btn_configuracio_Click">
+                <Image Source="imatges/Configuracio.png" Height="18" Width="18"/>
+            </Button>
+            <ComboBox x:Name="cmb_alineacio" Margin="0" Width="97" SelectedIndex="0" SelectionChanged="cmb_alineacio_SelectionChanged">
+                <ComboBoxItem Content="Center"/>
+                <ComboBoxItem Content="Top"/>
+                <ComboBoxItem Content="Left"/>
+                <ComboBoxItem Content="Right"/>
+                <ComboBoxItem Content="Bottom"/>
+            </ComboBox>
+        </ToolBar>
+        
+        <TabControl x:Name="tab_pantalles" HorizontalAlignment="Stretch" Height="auto" Margin="0,50,0,0" VerticalAlignment="Stretch" Width="auto" SelectionChanged="tab_pantalles_SelectionChanged">
+            <TabItem x:Name="Inici_Tab" Header="Inici">
+                <Grid>
+                    <TextBlock x:Name="txt_benvinguda" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="14">
+                        <Run FontWeight="Bold">Benvinguts a la finestra de l'activitat 04.</Run>
+                        <LineBreak/>
+                        Aquesta activitat ens permetrà posar en pràctica els coneixements
+                        <LineBreak/>
+                        adquirits sobre <Run Foreground="Red">Menus, Barres d'eina i d'estat</Run>, aixi com el treball amb
+                        <LineBreak/>
+                        <Run Foreground="Green">TabControl</Run> i diferents finestres
+                    </TextBlock>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Imatges_Tab" Header="Imatges">
+                <Grid>
+                    <Image Source="imatges/maxresdefault.png" Margin="228,44,201,55"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="Videos_Tab" Header="Videos">
+                <Grid>
+                    <MediaElement x:Name="mdv_video" HorizontalAlignment="Center" Height="255" Margin="218,29,186,22" VerticalAlignment="Center" Width="382" Source="http://hubblesource.stsci.edu/sources/video/clips/details/images/hst_1.mpg" LoadedBehavior="Play"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+        <StatusBar x:Name="stb_Notificacions" HorizontalAlignment="Stretch" Height="35" Margin="0,384,0,0" VerticalAlignment="Bottom" Width="auto">
+            <Label x:Name="lbl_notificacio" Content="Contingut status bar" Width="782"/>
+        </StatusBar>
+
+    </Grid>
+</Window>

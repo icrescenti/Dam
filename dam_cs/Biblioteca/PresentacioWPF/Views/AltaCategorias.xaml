@@ -1,0 +1,25 @@
+﻿<Window x:Class="PresentacioWPF.Views.AltaCategorias"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PresentacioWPF.Views"
+        mc:Ignorable="d"
+         WindowStartupLocation="CenterScreen"
+        Title="AltaCategoria" 
+        Height="220" Width="300"
+        MinHeight="220" MinWidth="300"
+        ResizeMode="NoResize" Loaded="AltaLlibre1_Loaded"
+        >
+    <Grid>
+        <Button x:Name="btnAcceptar" Content="Acceptar" HorizontalAlignment="Left" Margin="40,0,0,40" VerticalAlignment="Bottom" Width="90" Click="btnAcceptar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,40,40" VerticalAlignment="Bottom" Width="90" Click="btnCancelar_Click"/>
+        <TextBox x:Name="txtNomCategoria" HorizontalAlignment="Left" Height="23" Margin="104,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36">
+            Nom de
+            <LineBreak/>
+            Categoria
+        </TextBlock>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Crescenti_Ivan_A06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A06"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" MinHeight="945.842" MinWidth="566.317" Height="945.842" Width="566.317">
+    <Grid>
+        <local:ControlDades x:Name="Temperatura_0" maxTemperatura="0" minTemperatura="0" diaSetmana="Dilluns" imgTemps="res/cloudy.png" Margin="10,10,10,687"></local:ControlDades>
+        <local:ControlDades x:Name="Temperatura_1" maxTemperatura="0" minTemperatura="0" diaSetmana="Dimarts" imgTemps="res/rainy.png" Margin="10,228,10,469"></local:ControlDades>
+        <local:ControlDades x:Name="Temperatura_2" maxTemperatura="0" minTemperatura="0" diaSetmana="Dimecres" imgTemps="res/storm.png" Margin="10,446,10,251"></local:ControlDades>
+        <local:ControlDades x:Name="Temperatura_3" maxTemperatura="0" minTemperatura="0" diaSetmana="Dijous" imgTemps="res/sun.png" Margin="10,664,10,33"></local:ControlDades>
+    </Grid>
+</Window>

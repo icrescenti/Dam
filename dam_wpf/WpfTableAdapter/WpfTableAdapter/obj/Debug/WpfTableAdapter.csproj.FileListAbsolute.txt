@@ -1,0 +1,64 @@
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe.config
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.pdb
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.g.cs
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\App.g.cs
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.cache
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.lref
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.baml
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.g.resources
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.Properties.Resources.resources
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.GenerateResource.cache
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.CoreCompileInputs.cache
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.exe
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.pdb
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\Window1.g.cs
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\Window1.baml
+C:\Users\angel\source\repos\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csprojAssemblyReference.cache
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe.config
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.pdb
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csprojAssemblyReference.cache
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.g.cs
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\App.g.cs
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.cache
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.lref
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.baml
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.g.resources
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.Properties.Resources.resources
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.GenerateResource.cache
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.CoreCompileInputs.cache
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.exe
+G:\Institut Campalans\Curs 20_21\DAM2_M07_Desenvolupament Interficies\UF1\UF1_5_AccesDades\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.pdb
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe.config
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.pdb
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csprojAssemblyReference.cache
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.g.cs
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\App.g.cs
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.cache
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.lref
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.baml
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.g.resources
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.Properties.Resources.resources
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.GenerateResource.cache
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.CoreCompileInputs.cache
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.exe
+X:\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.pdb
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe.config
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.exe
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\bin\Debug\WpfTableAdapter.pdb
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csprojAssemblyReference.cache
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.g.cs
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\App.g.cs
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.cache
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter_MarkupCompile.lref
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\MainWindow.baml
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.g.resources
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.Properties.Resources.resources
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.GenerateResource.cache
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.csproj.CoreCompileInputs.cache
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.exe
+D:\Dam\APRAT-WPF-DEV\dam_wpf\UF1\WpfTableAdapter\WpfTableAdapter\obj\Debug\WpfTableAdapter.pdb

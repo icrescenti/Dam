@@ -1,0 +1,15 @@
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\bin\Debug\Crescenti_Ivan_A01_Ex4.exe.config
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\bin\Debug\Crescenti_Ivan_A01_Ex4.exe
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\bin\Debug\Crescenti_Ivan_A01_Ex4.pdb
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.csprojAssemblyReference.cache
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\MainWindow.g.cs
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\App.g.cs
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4_MarkupCompile.cache
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4_MarkupCompile.lref
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\MainWindow.baml
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.g.resources
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.Properties.Resources.resources
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.csproj.GenerateResource.cache
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.csproj.CoreCompileInputs.cache
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.exe
+D:\Dam\APRAT-WPF-DEV\icrescenti\dam_wpf\UF1\Crescenti_Ivan_A01\Crescenti_Ivan_A01_Ex4\obj\Debug\Crescenti_Ivan_A01_Ex4.pdb

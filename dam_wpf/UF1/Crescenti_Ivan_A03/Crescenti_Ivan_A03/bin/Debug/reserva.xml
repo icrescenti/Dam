@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Reserva xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DataReserva>2020-11-13T10:21:24.2923749+01:00</DataReserva>
+  <HoraReserva>0</HoraReserva>
+  <MinutsReserva>0</MinutsReserva>
+  <AcceptaCondicions>true</AcceptaCondicions>
+  <Centre>TIR Girona Centre</Centre>
+  <Comensals>0</Comensals>
+  <Nom>Eustaqui</Nom>
+  <Cognom>Gómez del Moral i Fuster</Cognom>
+  <Email>eustaquiobetis1971@hotmail.com</Email>
+  <Telefon>12      </Telefon>
+  <Comentaris>apes</Comentaris>
+</Reserva>

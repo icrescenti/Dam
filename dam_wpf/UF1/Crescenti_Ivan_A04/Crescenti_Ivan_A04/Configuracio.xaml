@@ -1,0 +1,65 @@
+﻿<Window x:Class="Crescenti_Ivan_A04.Configuracio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A04"
+        mc:Ignorable="d"
+        Title="Configuracio" Height="284.06" Width="466.964" WindowStartupLocation="CenterScreen">
+
+    <Window.ContextMenu>
+        <ContextMenu Name="menucontextual">
+            <MenuItem Header="Vista optimitzada" />
+            <MenuItem Header="Vsita general" />
+            <MenuItem Header="Restableix" />
+        </ContextMenu>
+    </Window.ContextMenu>
+
+    <Grid>
+        
+        <Label x:Name="lbl_colors" Content="Colors:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="12"/>
+        <Label x:Name="lbl_info" Content="Polsa el botó dret del ratolí" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="12"/>
+        <Label x:Name="lbl_mides" Content="Mides:" HorizontalAlignment="Left" Margin="176,10,0,0" VerticalAlignment="Top" FontSize="12"/>
+
+        <ListBox x:Name="lsb_colors" Margin="10,36,336,44" SelectionChanged="lsb_colors_SelectionChanged">
+            
+            <ListBoxItem x:Name="opcio_blanc" Width="100">
+                <Grid Height="28" Width="97">
+                    <Border HorizontalAlignment="Left" Height="25" Width="25" Background="White" BorderThickness="1" BorderBrush="Black"/>
+                    <Label Content="Blanc" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="25,0,0,0"/>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem x:Name="opcio_vermell" Width="100">
+                <Grid Height="28" Width="97">
+                    <Border HorizontalAlignment="Left" Height="25" Width="25" Background="Red" BorderThickness="1" BorderBrush="Black"/>
+                    <Label Content="Vermell" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="25,0,0,0"/>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem x:Name="opcio_groc" Width="100">
+                <Grid Height="28" Width="97">
+                    <Border HorizontalAlignment="Left" Height="25" Width="25" Background="Yellow" BorderThickness="1" BorderBrush="Black"/>
+                    <Label Content="Groc" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="25,0,0,0"/>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem x:Name="opcio_verd" Width="100">
+                <Grid Height="28" Width="97">
+                    <Border HorizontalAlignment="Left" Height="25" Width="25" Background="Green" BorderThickness="1" BorderBrush="Black"/>
+                    <Label Content="Verd" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="25,0,0,0"/>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem x:Name="opcio_blau" Width="100">
+                <Grid Height="28" Width="97">
+                    <Border HorizontalAlignment="Left" Height="25" Width="25" Background="Blue" BorderThickness="1" BorderBrush="Black"/>
+                    <Label Content="Blau" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="25,0,0,0"/>
+                </Grid>
+            </ListBoxItem>
+            
+        </ListBox>
+        
+        <RadioButton Name="rd_res_1" Content="120x120" HorizontalAlignment="Left" Margin="165,41,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rd_res_2" Content="160x120" HorizontalAlignment="Left" Margin="264,41,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rd_res_3" Content="240x180" HorizontalAlignment="Left" Margin="165,73,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rd_res_4" Content="300x210" HorizontalAlignment="Left" Margin="264,76,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

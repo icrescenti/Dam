@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="icrescentidbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Categorias">
+          <Key>
+            <PropertyRef Name="idCategoria" />
+          </Key>
+          <Property Name="idCategoria" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Libros">
+          <Key>
+            <PropertyRef Name="idLibro" />
+          </Key>
+          <Property Name="idLibro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idCategoria" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Autor" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="FechaPublicacion" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="LibrosUnidades">
+          <Key>
+            <PropertyRef Name="idLibroUnidades" />
+          </Key>
+          <Property Name="idLibroUnidades" Type="int" Nullable="false" />
+          <Property Name="idLibro" Type="int" Nullable="false" />
+          <Property Name="idUbicacion" Type="int" Nullable="false" />
+          <Property Name="Codigo" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Estado" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ubicaciones">
+          <Key>
+            <PropertyRef Name="idUbicacion" />
+          </Key>
+          <Property Name="idUbicacion" Type="int" Nullable="false" />
+          <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Ventas">
+          <Key>
+            <PropertyRef Name="idVenta" />
+          </Key>
+          <Property Name="idVenta" Type="int" Nullable="false" />
+          <Property Name="idLibroUnidades" Type="int" Nullable="false" />
+          <Property Name="FechaVenta" Type="datetime" />
+          <Property Name="precio" Type="decimal" Precision="16" Scale="2" Nullable="false" />
+          <Property Name="NombreCliente" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="Libros_Categoria_FK">
+          <End Role="Categorias" Type="Self.Categorias" Multiplicity="1" />
+          <End Role="Libros" Type="Self.Libros" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="idCategoria" />
+            </Principal>
+            <Dependent Role="Libros">
+              <PropertyRef Name="idCategoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_FK">
+          <End Role="Libros" Type="Self.Libros" Multiplicity="1" />
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libros">
+              <PropertyRef Name="idLibro" />
+            </Principal>
+            <Dependent Role="LibrosUnidades">
+              <PropertyRef Name="idLibro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_ubicaciones_FK">
+          <End Role="Ubicaciones" Type="Self.Ubicaciones" Multiplicity="1" />
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidades" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ubicaciones">
+              <PropertyRef Name="idUbicacion" />
+            </Principal>
+            <Dependent Role="LibrosUnidades">
+              <PropertyRef Name="idUbicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_Venta_FK">
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidades" Multiplicity="1" />
+          <End Role="Ventas" Type="Self.Ventas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LibrosUnidades">
+              <PropertyRef Name="idLibroUnidades" />
+            </Principal>
+            <Dependent Role="Ventas">
+              <PropertyRef Name="idLibroUnidades" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="ObtenerLibrosConUnidades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="icrescentidbModelStoreContainer">
+          <EntitySet Name="Categorias" EntityType="Self.Categorias" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Libros" EntityType="Self.Libros" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="LibrosUnidades" EntityType="Self.LibrosUnidades" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ubicaciones" EntityType="Self.Ubicaciones" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Ventas" EntityType="Self.Ventas" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="Libros_Categoria_FK" Association="Self.Libros_Categoria_FK">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Libros" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_FK" Association="Self.LibrosUnidades_FK">
+            <End Role="Libros" EntitySet="Libros" />
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_ubicaciones_FK" Association="Self.LibrosUnidades_ubicaciones_FK">
+            <End Role="Ubicaciones" EntitySet="Ubicaciones" />
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_Venta_FK" Association="Self.LibrosUnidades_Venta_FK">
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+            <End Role="Ventas" EntitySet="Ventas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="icrescentidbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Categoria">
+          <Key>
+            <PropertyRef Name="idCategoria" />
+          </Key>
+          <Property Name="idCategoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Libros" Relationship="Self.Libros_Categoria_FK" FromRole="Categorias" ToRole="Libros" />
+        </EntityType>
+        <EntityType Name="Libro">
+          <Key>
+            <PropertyRef Name="idLibro" />
+          </Key>
+          <Property Name="idLibro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idCategoria" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Autor" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="FechaPublicacion" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Categoria" Relationship="Self.Libros_Categoria_FK" FromRole="Libros" ToRole="Categorias" />
+          <NavigationProperty Name="LibrosUnidades" Relationship="Self.LibrosUnidades_FK" FromRole="Libros" ToRole="LibrosUnidades" />
+        </EntityType>
+        <EntityType Name="LibrosUnidade">
+          <Key>
+            <PropertyRef Name="idLibroUnidades" />
+          </Key>
+          <Property Name="idLibroUnidades" Type="Int32" Nullable="false" />
+          <Property Name="idLibro" Type="Int32" Nullable="false" />
+          <Property Name="idUbicacion" Type="Int32" Nullable="false" />
+          <Property Name="Codigo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Estado" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Libro" Relationship="Self.LibrosUnidades_FK" FromRole="LibrosUnidades" ToRole="Libros" />
+          <NavigationProperty Name="Ubicacione" Relationship="Self.LibrosUnidades_ubicaciones_FK" FromRole="LibrosUnidades" ToRole="Ubicaciones" />
+          <NavigationProperty Name="Ventas" Relationship="Self.LibrosUnidades_Venta_FK" FromRole="LibrosUnidades" ToRole="Ventas" />
+        </EntityType>
+        <EntityType Name="Ubicacione">
+          <Key>
+            <PropertyRef Name="idUbicacion" />
+          </Key>
+          <Property Name="idUbicacion" Type="Int32" Nullable="false" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="LibrosUnidades" Relationship="Self.LibrosUnidades_ubicaciones_FK" FromRole="Ubicaciones" ToRole="LibrosUnidades" />
+        </EntityType>
+        <EntityType Name="Venta">
+          <Key>
+            <PropertyRef Name="idVenta" />
+          </Key>
+          <Property Name="idVenta" Type="Int32" Nullable="false" />
+          <Property Name="idLibroUnidades" Type="Int32" Nullable="false" />
+          <Property Name="FechaVenta" Type="DateTime" Precision="3" />
+          <Property Name="precio" Type="Decimal" Precision="16" Scale="2" Nullable="false" />
+          <Property Name="NombreCliente" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="LibrosUnidade" Relationship="Self.LibrosUnidades_Venta_FK" FromRole="Ventas" ToRole="LibrosUnidades" />
+        </EntityType>
+        <Association Name="Libros_Categoria_FK">
+          <End Role="Categorias" Type="Self.Categoria" Multiplicity="1" />
+          <End Role="Libros" Type="Self.Libro" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categorias">
+              <PropertyRef Name="idCategoria" />
+            </Principal>
+            <Dependent Role="Libros">
+              <PropertyRef Name="idCategoria" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_FK">
+          <End Role="Libros" Type="Self.Libro" Multiplicity="1" />
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Libros">
+              <PropertyRef Name="idLibro" />
+            </Principal>
+            <Dependent Role="LibrosUnidades">
+              <PropertyRef Name="idLibro" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_ubicaciones_FK">
+          <End Role="Ubicaciones" Type="Self.Ubicacione" Multiplicity="1" />
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Ubicaciones">
+              <PropertyRef Name="idUbicacion" />
+            </Principal>
+            <Dependent Role="LibrosUnidades">
+              <PropertyRef Name="idUbicacion" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="LibrosUnidades_Venta_FK">
+          <End Role="LibrosUnidades" Type="Self.LibrosUnidade" Multiplicity="1" />
+          <End Role="Ventas" Type="Self.Venta" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="LibrosUnidades">
+              <PropertyRef Name="idLibroUnidades" />
+            </Principal>
+            <Dependent Role="Ventas">
+              <PropertyRef Name="idLibroUnidades" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="icrescentidbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Categorias" EntityType="Self.Categoria" />
+          <EntitySet Name="Libros" EntityType="Self.Libro" />
+          <EntitySet Name="LibrosUnidades" EntityType="Self.LibrosUnidade" />
+          <EntitySet Name="Ubicaciones" EntityType="Self.Ubicacione" />
+          <EntitySet Name="Ventas" EntityType="Self.Venta" />
+          <AssociationSet Name="Libros_Categoria_FK" Association="Self.Libros_Categoria_FK">
+            <End Role="Categorias" EntitySet="Categorias" />
+            <End Role="Libros" EntitySet="Libros" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_FK" Association="Self.LibrosUnidades_FK">
+            <End Role="Libros" EntitySet="Libros" />
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_ubicaciones_FK" Association="Self.LibrosUnidades_ubicaciones_FK">
+            <End Role="Ubicaciones" EntitySet="Ubicaciones" />
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+          </AssociationSet>
+          <AssociationSet Name="LibrosUnidades_Venta_FK" Association="Self.LibrosUnidades_Venta_FK">
+            <End Role="LibrosUnidades" EntitySet="LibrosUnidades" />
+            <End Role="Ventas" EntitySet="Ventas" />
+          </AssociationSet>
+          <FunctionImport Name="ObtenerLibrosConUnidades" ReturnType="Collection(icrescentidbModel.ObtenerLibrosConUnidades_Result)" />
+        </EntityContainer>
+        <ComplexType Name="ObtenerLibrosConUnidades_Result">
+          <Property Type="String" Name="NombreDelLibro" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="AutorDelLibro" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="Unidades" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="icrescentidbModelStoreContainer" CdmEntityContainer="icrescentidbEntities">
+          <EntitySetMapping Name="Categorias">
+            <EntityTypeMapping TypeName="icrescentidbModel.Categoria">
+              <MappingFragment StoreEntitySet="Categorias">
+                <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Libros">
+            <EntityTypeMapping TypeName="icrescentidbModel.Libro">
+              <MappingFragment StoreEntitySet="Libros">
+                <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+                <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Autor" ColumnName="Autor" />
+                <ScalarProperty Name="FechaPublicacion" ColumnName="FechaPublicacion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="LibrosUnidades">
+            <EntityTypeMapping TypeName="icrescentidbModel.LibrosUnidade">
+              <MappingFragment StoreEntitySet="LibrosUnidades">
+                <ScalarProperty Name="idLibroUnidades" ColumnName="idLibroUnidades" />
+                <ScalarProperty Name="idLibro" ColumnName="idLibro" />
+                <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+                <ScalarProperty Name="Codigo" ColumnName="Codigo" />
+                <ScalarProperty Name="Estado" ColumnName="Estado" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ubicaciones">
+            <EntityTypeMapping TypeName="icrescentidbModel.Ubicacione">
+              <MappingFragment StoreEntitySet="Ubicaciones">
+                <ScalarProperty Name="idUbicacion" ColumnName="idUbicacion" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Ventas">
+            <EntityTypeMapping TypeName="icrescentidbModel.Venta">
+              <MappingFragment StoreEntitySet="Ventas">
+                <ScalarProperty Name="idVenta" ColumnName="idVenta" />
+                <ScalarProperty Name="idLibroUnidades" ColumnName="idLibroUnidades" />
+                <ScalarProperty Name="FechaVenta" ColumnName="FechaVenta" />
+                <ScalarProperty Name="precio" ColumnName="precio" />
+                <ScalarProperty Name="NombreCliente" ColumnName="NombreCliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="ObtenerLibrosConUnidades" FunctionName="icrescentidbModel.Store.ObtenerLibrosConUnidades">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="icrescentidbModel.ObtenerLibrosConUnidades_Result">
+                <ScalarProperty Name="NombreDelLibro" ColumnName="NombreDelLibro" />
+                <ScalarProperty Name="AutorDelLibro" ColumnName="AutorDelLibro" />
+                <ScalarProperty Name="Unidades" ColumnName="Unidades" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

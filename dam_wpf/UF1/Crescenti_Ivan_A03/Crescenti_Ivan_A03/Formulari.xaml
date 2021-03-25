@@ -1,0 +1,98 @@
+﻿<Window x:Name="Finestra0" x:Class="Crescenti_Ivan_A03.Formulari"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A03"
+        mc:Ignorable="d"
+        Title="Inscripció" Height="717.107" Width="544.036" WindowStartupLocation="CenterScreen" MinHeight="717.107" MinWidth="544.036" ResizeMode="NoResize" Loaded="Finestra0_Loaded">
+    <Grid>
+        <!-- ESTIL -->
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="Height" Value="29"/>
+            </Style>
+            <Style TargetType="TextBox">
+                <Style.Triggers>
+                    <Trigger Property="IsFocused" Value="True">
+                        <Setter Property="Foreground" Value="Blue"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+
+        <!-- LABELS -->
+        <Label x:Name="lbl_titol" Content="FORMULARI INSCRIPCIÓ" HorizontalAlignment="Left" Margin="10,21,0,0" VerticalAlignment="Top" FontSize="23" Foreground="#FFE8CB13" Height="41"/>
+        <Label x:Name="lbl_selectcentre" Content="Seleccioneu el vostre centre:" HorizontalAlignment="Left" Margin="10,178,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="lbl_horari" Content="Horari:" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="lbl_datanaixament" Content="Data naixamanet:" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label x:Name="lbl_nompersona" Content="Nom:" HorizontalAlignment="Left" Margin="10,398,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="lbl_sexe" Content="Sexe:" HorizontalAlignment="Left" Margin="267,360,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="lbl_cognom" Content="Cognom:" HorizontalAlignment="Left" Margin="267,398,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="lbl_email" Content="Email:" HorizontalAlignment="Left" Margin="10,432,0,0" VerticalAlignment="Top" Width="48"/>
+        <Label x:Name="lbl_telefon" Content="Telefon:" HorizontalAlignment="Left" Margin="267,432,0,0" VerticalAlignment="Top" Width="57"/>
+        <Label x:Name="lbl_comentaris" Content="Comentaris:" HorizontalAlignment="Left" Margin="10,475,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label x:Name="lbl_prt_dades" Content="PROTECCIÓ DE DADES" HorizontalAlignment="Left" Margin="10,612,0,0" VerticalAlignment="Top" Width="141"/>
+        
+        <!-- Camps -->
+        <TextBlock x:Name="txtbk_informacio" TextWrapping="WrapWithOverflow" Margin="10,100,10,488">
+            Si-us-plau, ompli el seguent formulari per a formalitzar la inscripció.
+            <LineBreak/>
+            Us recomanem que abans de seleccionar l'horari consulteu a la nostra web els index
+            <LineBreak/>
+            d'assistència dels nostres socis per tal de garantir-vos el millor servei.
+        </TextBlock>
+        <ListBox x:Name="lstbx_centres" HorizontalAlignment="Left" Height="86" Margin="10,212,0,0" VerticalAlignment="Top" Width="243" TabIndex="0">
+            <ListBoxItem x:Name="ctrs_opcio_0" Content="TIR Girona Centre"/>
+            <ListBoxItem x:Name="ctrs_opcio_1" Content="TIR Anglès"/>
+            <ListBoxItem x:Name="ctrs_opcio_2" Content="TIR Bescanó"/>
+            <ListBoxItem x:Name="ctrs_opcio_3" Content="TIR Santa Eugènia"/>
+        </ListBox>
+        <ComboBox x:Name="cmb_horaris" HorizontalAlignment="Left" Height="25" Margin="122,315,0,0" VerticalAlignment="Top" Width="131" TabIndex="1">
+            <ComboBoxItem x:Name="cmb_opcio_0" Content="Matí (9h - 13h)"/>
+            <ComboBoxItem Content="Tarda (15h - 19h)"/>
+        </ComboBox>
+        <DatePicker x:Name="dta_datanaix" HorizontalAlignment="Left" Height="28" Margin="122,361,0,0" VerticalAlignment="Top" Width="131" TabIndex="2"/>
+        <ComboBox x:Name="cmb_sexe" HorizontalAlignment="Left" Height="28" Margin="329,361,0,0" VerticalAlignment="Top" Width="89" TabIndex="3">
+            <ComboBoxItem Content="Indefinit"/>
+            <ComboBoxItem Content="Home"/>
+            <ComboBoxItem Content="Dona"/>
+            <ComboBoxItem Content="Bigenere"/>
+            <ComboBoxItem Content="Androgyne"/>
+            <ComboBoxItem Content="Neutrois"/>
+            <ComboBoxItem Content="Agenere"/>
+            <ComboBoxItem Content="Intregenere"/>
+            <ComboBoxItem Content="Demiboy"/>
+            <ComboBoxItem Content="Demigirl"/>
+            <ComboBoxItem Content="Tercer Genere"/>
+            <ComboBoxItem Content="No Binari"/>
+            <ComboBoxItem Content="Panagenere"/>
+            <ComboBoxItem Content="Epicene"/>
+            <ComboBoxItem Content="Genderfluid"/>
+            <ComboBoxItem Content="Transgenere"/>
+            <ComboBoxItem Content="Transgenere alternatiu"/>
+            <ComboBoxItem Content="Bigenere"/>
+            <ComboBoxItem Content="Bigenere androgyme"/>
+            <ComboBoxItem Content="Bigenere androgyme i neutrois"/>
+            <ComboBoxItem Content="Agenere versio 2"/>
+            <ComboBoxItem Content="Agenere versio de genere vuit"/>
+            <ComboBoxItem Content="Demiagender"/>
+            <ComboBoxItem Content="Femme"/>
+            <ComboBoxItem Content="Butch"/>
+            <ComboBoxItem Content="Travesti"/>
+            <ComboBoxItem Content="Aliagender"/>
+            <ComboBoxItem Content="Transformer"/>
+            <ComboBoxItem Content="Apache Attack Helicopter"/>
+        </ComboBox>
+        <TextBox x:Name="txtbx_nom" HorizontalAlignment="Left" Height="23" Margin="63,401,0,0" TextWrapping="Wrap" Text="Eustaqui" VerticalAlignment="Top" Width="190" TabIndex="4"/>
+        <TextBox x:Name="txtbx_cognom" HorizontalAlignment="Left" Height="23" Margin="329,401,-7,0" TextWrapping="Wrap" Text="Gómez del Moral i Fuster" VerticalAlignment="Top" Width="190" TabIndex="5"/>
+        <TextBox x:Name="txtbx_email" HorizontalAlignment="Left" Height="23" Margin="63,436,0,0" TextWrapping="Wrap" Text="eustaquiobetis1971@hotmail.com" VerticalAlignment="Top" Width="190" TabIndex="6"/>
+        <TextBox x:Name="txtbx_telefon" HorizontalAlignment="Left" Height="23" Margin="329,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" TabIndex="7"/>
+        <TextBox x:Name="txtbx_comentaris" HorizontalAlignment="Left" Height="53" Margin="19,504,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500" TabIndex="8"/>
+        <Button x:Name="btn_reservar" Content="Reservar" HorizontalAlignment="Left" Height="24" Margin="19,572,0,0" VerticalAlignment="Top" Width="223" Click="btn_reservar_Click" TabIndex="9"/>
+        <Button x:Name="btn_netejar" Content="Netejar" HorizontalAlignment="Left" Height="24" Margin="296,572,0,0" VerticalAlignment="Top" Width="223" Click="btn_netejar_Click" TabIndex="10"/>
+        <CheckBox x:Name="ckx_protecciodades" Content="Accepto les condicions sobre el tractament de les dades enviades." HorizontalAlignment="Left" Margin="10,646,0,0" VerticalAlignment="Top" Width="509" TabIndex="11"/>
+    </Grid>
+</Window>

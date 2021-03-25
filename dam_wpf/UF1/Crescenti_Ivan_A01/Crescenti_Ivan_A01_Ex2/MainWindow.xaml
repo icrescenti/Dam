@@ -1,0 +1,15 @@
+﻿<Window x:Class="Crescenti_Ivan_A01_Ex2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Crescenti_Ivan_A01_Ex2"
+        mc:Ignorable="d"
+        Title="Exercici 2" Height="177" Width="427" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="contingut">
+        <TextBox x:Name="txt_nombre" TextAlignment="Left" HorizontalAlignment="Left" Height="24" Margin="120,42,0,0" VerticalAlignment="Top" Width="112" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="1" LostFocus="txt_nombre_LostFocus"/>
+        <TextBox x:Name="txt_resultat" TextAlignment="Left" IsEnabled="false" HorizontalAlignment="Left" Height="24" Margin="120,78,0,0" VerticalAlignment="Top" Width="187" TextWrapping="Wrap" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TabIndex="2"/>
+        <Button x:Name="btn_calcular" Content="Calcula" HorizontalAlignment="Left" VerticalAlignment="Top" Width="58" Margin="249,43,0,0" Height="23" TabIndex="4" Click="btn_titolcomplet_Click"/>
+        <Label x:Name="lbl_nombre" Content="Entra un nombre:" HorizontalAlignment="Left" Margin="8,41,0,0" VerticalAlignment="Top" Width="112" Height="25" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

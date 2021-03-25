@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Piles", "Pila\Piles.csproj", "{F7B8C349-DBC8-42FC-ADF9-F396526151F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7B8C349-DBC8-42FC-ADF9-F396526151F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B8C349-DBC8-42FC-ADF9-F396526151F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B8C349-DBC8-42FC-ADF9-F396526151F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B8C349-DBC8-42FC-ADF9-F396526151F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B183633F-2A3E-46CD-A177-0B65D9090BCF}
+	EndGlobalSection
+EndGlobal

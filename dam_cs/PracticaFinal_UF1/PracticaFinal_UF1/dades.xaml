@@ -1,0 +1,33 @@
+﻿<Window x:Class="PracticaFinal_UF1.dades"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaFinal_UF1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Crimson Dawn Tenis Club" MinHeight="284.4" MinWidth="695.6" Height="284.4" Width="695.6">
+    <Grid>
+
+        <Label x:Name="lbl_nom" VerticalAlignment="Top" Margin="34,76,0,0" HorizontalAlignment="Left" Content="Nom*:"/>
+        <Label x:Name="lbl_Cognom" VerticalAlignment="Top" Margin="34,107,0,0" HorizontalAlignment="Left" Content="Cognoms*:"/>
+        <Label x:Name="lbl_DNI" VerticalAlignment="Top" Margin="34,138,0,0" HorizontalAlignment="Left" Content="DNI*:"/>
+        <Label x:Name="lbl_federat" VerticalAlignment="Top" Margin="0,79,187,139" HorizontalAlignment="Right" Content="Esta federat:"/>
+        <RadioButton x:Name="rb_si" VerticalAlignment="Top" Margin="0,85,123,144" HorizontalAlignment="Right" Content="Si" Height="15" Width="28"/>
+        <RadioButton x:Name="rb_no" VerticalAlignment="Top" Margin="0,85,46,144" HorizontalAlignment="Right" Content="No" Height="15" Width="35"/>
+        <TextBox x:Name="tb_nom" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="123,78,0,0" Height="23" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tb_Cognoms" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="123,107,0,0" Height="23" HorizontalAlignment="Left"/>
+        <TextBox x:Name="tb_DNI" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="123,141,0,0" Height="23" HorizontalAlignment="Left"/>
+        <Button x:Name="btn_acceptar" Width="78" VerticalAlignment="Bottom" Margin="0,0,23,20" HorizontalAlignment="Right" Content="Acceptar" Click="btn_acceptar_Click" Height="24"/>
+        <Label x:Name="lbl_Edat" VerticalAlignment="Top" RenderTransformOrigin="0.06,-1.187" Margin="34,169,0,0" HorizontalAlignment="Left" Content="Edat*:"/>
+        <DatePicker x:Name="dpk_data" HorizontalAlignment="Left" Margin="123,171,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_titol" Content="Label" HorizontalAlignment="Left" Margin="34,13,0,0" VerticalAlignment="Top" Width="625"/>
+        <Separator HorizontalAlignment="Stretch" Height="20" Margin="0,39,0,0" VerticalAlignment="Top" Width="auto"/>
+        <TextBox x:Name="tb_edat" Width="120" VerticalAlignment="Top" TextWrapping="Wrap" Margin="123,172,0,0" Height="23" HorizontalAlignment="Left"/>
+        <Label x:Name="lbl_infoquota" VerticalAlignment="Top" Margin="0,138,110,0" HorizontalAlignment="Right" Content="Aquest usuari, ha de pagar la quota de:" Visibility="Hidden"/>
+        <Label x:Name="lbl_quota" VerticalAlignment="Top" Margin="0,138,34,0" HorizontalAlignment="Right" Content="0.000.000₿" Visibility="Hidden"/>
+        <Button x:Name="btn_exportar" Width="89" VerticalAlignment="Bottom" Margin="0,0,110,20" HorizontalAlignment="Right" Content="Exportar Soci" Height="24" Click="btn_exportar_Click"/>
+        <Button x:Name="btn_exportarSocis" Width="107" VerticalAlignment="Bottom" Margin="0,0,204,20" HorizontalAlignment="Right" Content="Exportar els Socis" Height="24" Click="btn_exportarSocis_Click"/>
+
+    </Grid>
+</Window>
