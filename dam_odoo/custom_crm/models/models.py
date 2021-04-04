@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
 from datetime import datetime
+import time
 
 class Visit(models.Model):
     _name = 'custom_crm.visit'
@@ -12,7 +13,11 @@ class Visit(models.Model):
     type = fields.Selection([('P','Presencial'),('W','Whatsapp'),('T','Telefon')], string='Tipus',required=True)
     done = fields.Boolean(string='Fet',readonly=True)
 
-def _compute_difference(self):
-    date = 20
-    #for rec in self:
-        #rec.days_difference = (datetime.date.time.today()- rec.created_date).days
+    def _compute_difference(self):
+        d1=time.strftime("%Y-%m-%d")
+        d2=self.created_date
+        
+        d1=datetime.strptime(str(d1),'%Y-%m-%d') 
+        d2=datetime.strptime(str(d2),'%Y-%m-%d')
+        d3=d1-d2
+        self.date=str(d3.days)
