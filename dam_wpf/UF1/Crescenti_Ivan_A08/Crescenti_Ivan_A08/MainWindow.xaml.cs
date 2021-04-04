@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,7 @@ namespace Crescenti_Ivan_A08
     {
         public NorthwindDataSet dset = new NorthwindDataSet();
         public NorthwindDataSetTableAdapters.EmployeesTableAdapter adaptadorEmployees = new NorthwindDataSetTableAdapters.EmployeesTableAdapter();
-        public NorthwindDataSetTableAdapters.OrdersTableAdapter adaptadorOrders = new NorthwindDataSetTableAdapters.OrdersTableAdapter();
+        public NorthwindDataSetTableAdapters.vOrdersCustomersTableAdapter adaptadorOrdersAmbCustomers = new NorthwindDataSetTableAdapters.vOrdersCustomersTableAdapter();
 
         private NorthwindDataSet.EmployeesRow[] employees;
 
@@ -31,7 +33,7 @@ namespace Crescenti_Ivan_A08
             InitializeComponent();
 
             adaptadorEmployees.Fill(dset.Employees);
-            adaptadorOrders.Fill(dset.Orders);
+            adaptadorOrdersAmbCustomers.Fill(dset.vOrdersCustomers);
 
             MainGrid.DataContext = dset;
 
@@ -49,14 +51,31 @@ namespace Crescenti_Ivan_A08
         private void employeesCognoms_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             try {
-                gridResultats.ItemsSource = dset.Orders.Where(b => b.EmployeeID == employees[employeesCognoms.SelectedIndex].EmployeeID);
+                gridResultats.ItemsSource = dset.vOrdersCustomers.Where(b => b.EmployeeID == employees[employeesCognoms.SelectedIndex].EmployeeID);
             }
             catch { }
         }
 
-        private void opcioOrdres_Click(object sender, RoutedEventArgs e)
+        private void opcioConsultes_Click(object sender, RoutedEventArgs e)
         {
-            MantenimentOrdres manteniment = new MantenimentOrdres();
+            MainWindow consulta = new MainWindow();
+            consulta.ShowDialog();
+        }
+
+        private void opcioManteniment_Click(object sender, RoutedEventArgs e)
+        {
+            int orderID = 0;
+
+            System.Data.DataRow primeraRow = (System.Data.DataRow)gridResultats.Items[0];
+            System.Data.DataRow rowSeleccionada = (System.Data.DataRow)gridResultats.SelectedItem;
+
+            if (rowSeleccionada == null)
+                int.TryParse(primeraRow["OrderID"].ToString(), out orderID);
+            else
+                int.TryParse(rowSeleccionada["OrderID"].ToString(), out orderID);
+
+
+            MantenimentOrdres manteniment = new MantenimentOrdres(orderID);
             manteniment.ShowDialog();
         }
 
@@ -80,6 +99,11 @@ namespace Crescenti_Ivan_A08
         private void btnUltim_Click(object sender, RoutedEventArgs e)
         {
             gridResultats.SelectedIndex = gridResultats.Items.Count-1;
+        }
+
+        private void btnTancar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

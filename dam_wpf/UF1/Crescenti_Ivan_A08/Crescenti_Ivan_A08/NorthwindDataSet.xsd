@@ -1369,6 +1369,34 @@ SELECT TerritoryID, TerritoryDescription, RegionID FROM Territories WHERE (Terri
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vOrdersCustomersTableAdapter" GeneratorDataComponentClassName="vOrdersCustomersTableAdapter" Name="vOrdersCustomers" UserDataComponentName="vOrdersCustomersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="NorthwindConnectionString (Settings)" DbObjectName="Northwind.dbo.vOrdersCustomers" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT OrderID, OrderDate, RequiredDate, ShippedDate, Freight, ShipCountry, CompanyName, Address, PostalCode, City, Phone, Fax, EmployeeID FROM dbo.vOrdersCustomers</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="RequiredDate" DataSetColumn="RequiredDate" />
+              <Mapping SourceColumn="ShippedDate" DataSetColumn="ShippedDate" />
+              <Mapping SourceColumn="Freight" DataSetColumn="Freight" />
+              <Mapping SourceColumn="ShipCountry" DataSetColumn="ShipCountry" />
+              <Mapping SourceColumn="CompanyName" DataSetColumn="CompanyName" />
+              <Mapping SourceColumn="Address" DataSetColumn="Address" />
+              <Mapping SourceColumn="PostalCode" DataSetColumn="PostalCode" />
+              <Mapping SourceColumn="City" DataSetColumn="City" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="Fax" DataSetColumn="Fax" />
+              <Mapping SourceColumn="EmployeeID" DataSetColumn="EmployeeID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="CustOrderHistTableAdapter" GeneratorDataComponentClassName="CustOrderHistTableAdapter" Name="CustOrderHist" UserDataComponentName="CustOrderHistTableAdapter">
             <MainSource>
               <DbSource ConnectionRef="NorthwindConnectionString (Settings)" DbObjectName="Northwind.dbo.CustOrderHist" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
@@ -2542,6 +2570,67 @@ SELECT TerritoryID, TerritoryDescription, RegionID FROM Territories WHERE (Terri
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="vOrdersCustomers" msprop:Generator_TableClassName="vOrdersCustomersDataTable" msprop:Generator_TableVarName="tablevOrdersCustomers" msprop:Generator_TablePropName="vOrdersCustomers" msprop:Generator_RowDeletingName="vOrdersCustomersRowDeleting" msprop:Generator_RowChangingName="vOrdersCustomersRowChanging" msprop:Generator_RowEvHandlerName="vOrdersCustomersRowChangeEventHandler" msprop:Generator_RowDeletedName="vOrdersCustomersRowDeleted" msprop:Generator_UserTableName="vOrdersCustomers" msprop:Generator_RowChangedName="vOrdersCustomersRowChanged" msprop:Generator_RowEvArgName="vOrdersCustomersRowChangeEvent" msprop:Generator_RowClassName="vOrdersCustomersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RequiredDate" msprop:Generator_ColumnVarNameInTable="columnRequiredDate" msprop:Generator_ColumnPropNameInRow="RequiredDate" msprop:Generator_ColumnPropNameInTable="RequiredDateColumn" msprop:Generator_UserColumnName="RequiredDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ShippedDate" msprop:Generator_ColumnVarNameInTable="columnShippedDate" msprop:Generator_ColumnPropNameInRow="ShippedDate" msprop:Generator_ColumnPropNameInTable="ShippedDateColumn" msprop:Generator_UserColumnName="ShippedDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Freight" msprop:Generator_ColumnVarNameInTable="columnFreight" msprop:Generator_ColumnPropNameInRow="Freight" msprop:Generator_ColumnPropNameInTable="FreightColumn" msprop:Generator_UserColumnName="Freight" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ShipCountry" msprop:Generator_ColumnVarNameInTable="columnShipCountry" msprop:Generator_ColumnPropNameInRow="ShipCountry" msprop:Generator_ColumnPropNameInTable="ShipCountryColumn" msprop:Generator_UserColumnName="ShipCountry" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_UserColumnName="CompanyName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Address" msprop:Generator_ColumnVarNameInTable="columnAddress" msprop:Generator_ColumnPropNameInRow="Address" msprop:Generator_ColumnPropNameInTable="AddressColumn" msprop:Generator_UserColumnName="Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PostalCode" msprop:Generator_ColumnVarNameInTable="columnPostalCode" msprop:Generator_ColumnPropNameInRow="PostalCode" msprop:Generator_ColumnPropNameInTable="PostalCodeColumn" msprop:Generator_UserColumnName="PostalCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="City" msprop:Generator_ColumnVarNameInTable="columnCity" msprop:Generator_ColumnPropNameInRow="City" msprop:Generator_ColumnPropNameInTable="CityColumn" msprop:Generator_UserColumnName="City" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fax" msprop:Generator_ColumnVarNameInTable="columnFax" msprop:Generator_ColumnPropNameInRow="Fax" msprop:Generator_ColumnPropNameInTable="FaxColumn" msprop:Generator_UserColumnName="Fax" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="24" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmployeeID" msprop:Generator_ColumnVarNameInTable="columnEmployeeID" msprop:Generator_ColumnPropNameInRow="EmployeeID" msprop:Generator_ColumnPropNameInTable="EmployeeIDColumn" msprop:Generator_UserColumnName="EmployeeID" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="CustOrderHist" msprop:Generator_TableClassName="CustOrderHistDataTable" msprop:Generator_TableVarName="tableCustOrderHist" msprop:Generator_TablePropName="CustOrderHist" msprop:Generator_RowDeletingName="CustOrderHistRowDeleting" msprop:Generator_RowChangingName="CustOrderHistRowChanging" msprop:Generator_RowEvHandlerName="CustOrderHistRowChangeEventHandler" msprop:Generator_RowDeletedName="CustOrderHistRowDeleted" msprop:Generator_UserTableName="CustOrderHist" msprop:Generator_RowChangedName="CustOrderHistRowChanged" msprop:Generator_RowEvArgName="CustOrderHistRowChangeEvent" msprop:Generator_RowClassName="CustOrderHistRow">
           <xs:complexType>
             <xs:sequence>
@@ -2749,6 +2838,10 @@ SELECT TerritoryID, TerritoryDescription, RegionID FROM Territories WHERE (Terri
     </xs:unique>
     <xs:unique name="Summary_x0020_of_x0020_Sales_x0020_by_x0020_Year_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Summary_x0020_of_x0020_Sales_x0020_by_x0020_Year" />
+      <xs:field xpath="mstns:OrderID" />
+    </xs:unique>
+    <xs:unique name="vOrdersCustomers_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vOrdersCustomers" />
       <xs:field xpath="mstns:OrderID" />
     </xs:unique>
     <xs:unique name="CustOrdersOrders_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
