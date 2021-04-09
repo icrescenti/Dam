@@ -1,0 +1,6 @@
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.dll
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.pdb
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csproj.CoreCompileInputs.cache
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.dll
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.pdb
+C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csprojAssemblyReference.cache
