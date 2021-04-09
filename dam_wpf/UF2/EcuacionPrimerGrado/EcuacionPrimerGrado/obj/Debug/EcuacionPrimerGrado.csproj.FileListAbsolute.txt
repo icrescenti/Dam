@@ -4,3 +4,9 @@ C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\Ecuacio
 C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.dll
 C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.pdb
 C:\Institut Campalans\DAM2 M07\UF2\UF2_1_Proves_Distribució_Aplicacions\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csprojAssemblyReference.cache
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.dll
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.pdb
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csprojAssemblyReference.cache
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csproj.CoreCompileInputs.cache
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.dll
+X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.pdb
