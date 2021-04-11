@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from odoo import models, fields, api
-from datetime import datetime
-import time
+from datetime import date
 
 class Visit(models.Model):
     _name = 'custom_crm.visit'
@@ -13,11 +12,27 @@ class Visit(models.Model):
     type = fields.Selection([('P','Presencial'),('W','Whatsapp'),('T','Telefon')], string='Tipus',required=True)
     done = fields.Boolean(string='Fet',readonly=True)
 
+    def f_create(self):
+        self.create(
+            {
+                'name': "ORM Test",
+                'customer': 1,
+                'date': datetime.datetime.now(),
+                'type': "W",
+                'done': False,
+            }
+        )
+
+    def f_search_update(self):
+        self.search([('type', '=', 'W')])
+        .write({'type': 'P'})
+    
+    def f_delete(self):
+        self.unlink()
+
     def _compute_difference(self):
-        d1=time.strftime("%Y-%m-%d")
-        d2=self.created_date
-        
-        d1=datetime.strptime(str(d1),'%Y-%m-%d') 
-        d2=datetime.strptime(str(d2),'%Y-%m-%d')
-        d3=d1-d2
-        self.date=str(d3.days)
+        for record in self:
+            if record.date != False:
+                record.days_from_visit = (datetime.datetime.now() - record.date).days_from_visit
+                
+        date = 1

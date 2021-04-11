@@ -27,6 +27,9 @@
       <field name="model">custom_crm.visit</field>
       <field name="arch" type="xml">
         <tree string="Visita">
+          <button type="object" name="f_create" string="Inserir visita base" class="oe_stat_button" />
+          <button type="object" name="f_search_update" string="Passar a presencial" class="oe_stat_button" />
+          <button type="object" name="f_delete" string="Eliminar visita" class="oe_stat_button" />
           <field name="customer"/>
           <field name="name"/>
           <field name="date"/>

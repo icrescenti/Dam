@@ -1,10 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dam_wpf",
-    "\\dam_wpf\\UF1",
-    "\\dam_wpf\\UF1\\Crescenti_Ivan_A08"
+    "\\dam_cs",
+    "\\dam_cs\\ClubTenis_SQLite"
   ],
-  "SelectedNode": "\\dam_wpf\\UF1\\Crescenti_Ivan_A08\\Crescenti_Ivan_A08.sln",
+  "SelectedNode": "\\dam_cs\\ClubTenis_SQLite\\ClubTenis_SQLite.sln",
   "PreviewInSolutionExplorer": false
 }
