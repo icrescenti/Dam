@@ -39,6 +39,7 @@ namespace ProvesUnitaries
         public void testejarParts()
         {
             testejarParsejador("2x - 1 = 0", 2);
+            //testejarParsejador("24x - 15 = -3", 2);
         }
 
         void testejarParsejador(string equacio, double resultatEsperat)

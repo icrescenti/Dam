@@ -10,3 +10,9 @@ X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerG
 X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csproj.CoreCompileInputs.cache
 X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.dll
 X:\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.pdb
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.dll
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\bin\Debug\EcuacionPrimerGrado.pdb
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csprojAssemblyReference.cache
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.csproj.CoreCompileInputs.cache
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.dll
+D:\Dam\Dam\dam_wpf\UF2\EcuacionPrimerGrado\EcuacionPrimerGrado\obj\Debug\EcuacionPrimerGrado.pdb

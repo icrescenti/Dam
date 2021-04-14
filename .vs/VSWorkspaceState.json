@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\dam_cs",
-    "\\dam_cs\\ClubTenis_SQLite"
+    "\\dam_wpf",
+    "\\dam_wpf\\UF2",
+    "\\dam_wpf\\UF2\\EcuacionPrimerGrado"
   ],
-  "SelectedNode": "\\dam_cs\\ClubTenis_SQLite\\ClubTenis_SQLite.sln",
+  "SelectedNode": "\\dam_wpf\\UF2\\EcuacionPrimerGrado\\EcuacionPrimerGrado.sln",
   "PreviewInSolutionExplorer": false
 }
