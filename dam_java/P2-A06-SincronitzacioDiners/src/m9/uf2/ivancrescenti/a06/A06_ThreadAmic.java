@@ -24,14 +24,15 @@ public class A06_ThreadAmic extends Thread {
     }
 
     public void run() {
-        retirarDiners(10);
-        retirarDiners(10);
-        retirarDiners(10);
+        for (int i = 0; i<3; i++)
+        {
+            retirarDiners(10);
+        }
     }
 
     //Mostra un missatge
-	private static void print(String l)
+	private static void print(String msg)
 	{
-		System.out.println(l);
+		System.out.println(msg);
 	}
 }

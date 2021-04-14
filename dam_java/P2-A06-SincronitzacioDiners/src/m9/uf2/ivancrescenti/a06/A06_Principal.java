@@ -9,8 +9,6 @@ public class A06_Principal {
 		
 		Pere.start();
 		Caterina.start();
-		
-		//print("Recompte total: " + c.getValor());
 	}
 
 }
