@@ -4,5 +4,4 @@ public class A08_Principal {
 	public static void main(String arg[]) throws InterruptedException {
 		
 	}
-
 }
