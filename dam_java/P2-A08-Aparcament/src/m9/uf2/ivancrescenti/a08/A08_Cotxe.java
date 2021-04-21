@@ -1,10 +1,25 @@
 package m9.uf2.ivancrescenti.a08;
 
-public class A08_Cotxe {
-    string Matricula;
+import java.util.Random;
 
-    public assignarMatricula(string Matricula)
+public class A08_Cotxe extends Thread {
+    String matricula = "0001 AAA";
+    A08_Parquing parking;
+
+    public A08_Cotxe(String nom, A08_Parquing parking, String matricula)
     {
-        this.Matricula = Matricula;
+        super(nom);
+        this.matricula = matricula;
+        this.parking = parking;
+    }
+
+	public void run() {
+        Random rand = new Random();
+        //Thread.sleep(rand.nextInt(10));
+	}
+
+    String retornarMatricula()
+    {
+        return matricula;
     }
 }
