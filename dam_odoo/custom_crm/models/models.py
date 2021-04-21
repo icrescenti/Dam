@@ -24,8 +24,7 @@ class Visit(models.Model):
         )
 
     def f_search_update(self):
-        self.search([('type', '=', 'W')])
-        .write({'type': 'P'})
+        self.search([('type', '=', 'W')]).write({'type': 'P'})
     
     def f_delete(self):
         self.unlink()
