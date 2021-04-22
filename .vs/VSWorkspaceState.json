@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
+    "\\dam_cs",
+    "\\dam_cs\\ClubSocis-MongoDB",
     "\\dam_wpf",
     "\\dam_wpf\\UF2",
     "\\dam_wpf\\UF2\\EcuacionPrimerGrado"
   ],
-  "SelectedNode": "\\dam_wpf\\UF2\\EcuacionPrimerGrado\\EcuacionPrimerGrado.sln",
+  "SelectedNode": "\\dam_cs\\ClubSocis-MongoDB\\ClubSocis-MongoDB.sln",
   "PreviewInSolutionExplorer": false
 }

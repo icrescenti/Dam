@@ -7,19 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="provaConexio" Content="Prova Conexio" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnProvaConex_Click"/>
-        <Button x:Name="btnMostrarTot" Content="Mostrar Tot" HorizontalAlignment="Left" Margin="28,63,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
-        <Button x:Name="btnBuscarSociDNI" Content="Buscar Soci" HorizontalAlignment="Left" Margin="162,63,0,0" VerticalAlignment="Top" Width="115" Height="30"/>
+        <Button x:Name="provaConexio" Content="Establir Conexio" HorizontalAlignment="Left" Margin="28,28,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnProvaConex_Click"/>
+        <Button x:Name="btnMostrarTot" Content="Mostrar Tot" HorizontalAlignment="Left" Margin="28,63,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnMostrarTot_Click"/>
+        <Button x:Name="btnBuscarSociDNI" Content="Buscar Soci" HorizontalAlignment="Left" Margin="162,63,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnBuscarSociDNI_Click"/>
         <Button x:Name="btnModCategoria" Content="Modificacio Categoria" HorizontalAlignment="Left" Margin="162,98,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnModCategoria_Click"/>
         <Button x:Name="btnEliminarCategoria" Content="Eliminar Categoria" HorizontalAlignment="Left" Margin="162,133,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnEliminarCategoria_Click"/>
         <Button x:Name="btnModLlibre" Content="Modificacio Llibre" HorizontalAlignment="Left" Margin="28,98,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnModLlibre_Click"/>
         <Button x:Name="btnEliminar" Content="Eliminar Llibre" HorizontalAlignment="Left" Margin="28,133,0,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnEliminar_Click"/>
 
-        <Button x:Name="btnConsultaLibro" Content="Consulta Llibre" HorizontalAlignment="Right" Margin="0,98,31,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnConsultaLibros_Click"/>
-        <Button x:Name="btnConsultarConUnidades" Content="Consulta Llibres amb Unitats" HorizontalAlignment="Right" Margin="0,133,31,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnConsultarConUnidades_Click"/>
-
         <DataGrid x:Name="dataGridView1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,182,0,0"/>
         <Label x:Name="lblEstat" Content="" HorizontalAlignment="Left" Margin="162,28,0,0" VerticalAlignment="Top" Height="30" Width="219"/>
-        <Button x:Name="btnConsultaCategorias" Content="Consulta Categorias" HorizontalAlignment="Right" Margin="0,63,31,0" VerticalAlignment="Top" Width="115" Height="30" Click="btnConsultaCategorias_Click"/>
     </Grid>
 </Window>
