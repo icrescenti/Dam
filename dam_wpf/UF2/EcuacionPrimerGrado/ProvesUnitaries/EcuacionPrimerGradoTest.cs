@@ -38,16 +38,43 @@ namespace ProvesUnitaries
         [TestMethod]
         public void testejarParts()
         {
-            testejarParsejador("2x - 1 = 0", 2);
-            //testejarParsejador("24x - 15 = -3", 2);
-        }
-
-        void testejarParsejador(string equacio, double resultatEsperat)
-        {
             EcuacionPrimerGrado.Parseador classeParsejador = new EcuacionPrimerGrado.Parseador();
 
+            testejarParsejador1(classeParsejador, "2x + 10 = 15", 2);
+            testejarParsejador1(classeParsejador, "14x - 1 = -20", 14);
+
+            testejarParsejador2(classeParsejador, "1x - 1 = 0", -1);
+            testejarParsejador2(classeParsejador, "1x + 2 = 2", 2);
+
+            testejarParsejador3(classeParsejador, "1x + 2 = -7", -7);
+            testejarParsejador3(classeParsejador, "1x + 2 = 4", 4);
+
+            testejarParsejadorOperador(classeParsejador, "1x + 2 = 4", "+");
+            testejarParsejadorOperador(classeParsejador, "1x - 2 = 4", "-");
+        }
+
+        void testejarParsejador1(EcuacionPrimerGrado.Parseador classeParsejador, string equacio, double resultatEsperat)
+        {
             double resultat = classeParsejador.obtenerParte1(equacio);
             Assert.AreEqual(resultatEsperat, resultat, margeError, "Prova fallida");
+        }
+        
+        void testejarParsejador2(EcuacionPrimerGrado.Parseador classeParsejador, string equacio, double resultatEsperat)
+        {
+            double resultat = classeParsejador.obtenerParte2(equacio);
+            Assert.AreEqual(resultatEsperat, resultat, margeError, "Prova fallida");
+        }
+        
+        void testejarParsejador3(EcuacionPrimerGrado.Parseador classeParsejador, string equacio, double resultatEsperat)
+        {
+            double resultat = classeParsejador.obtenerParte3(equacio);
+            Assert.AreEqual(resultatEsperat, resultat, margeError, "Prova fallida");
+        }
+        
+        void testejarParsejadorOperador(EcuacionPrimerGrado.Parseador classeParsejador, string equacio, string resultatEsperat)
+        {
+            string resultat = classeParsejador.obtenerOperador(equacio);
+            Assert.AreEqual(resultatEsperat, resultat);
         }
     }
 }
