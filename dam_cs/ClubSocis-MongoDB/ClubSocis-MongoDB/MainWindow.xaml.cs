@@ -33,7 +33,7 @@ namespace ClubSocis_MongoDB
         {
             try
             {
-                client = new MongoClient("mongodb://192.168.0.46:27017");
+                client = new MongoClient("mongodb://" + Config.dbSocket);
                 lblEstat.Content = "Connectat al servidor mongoDB!";
             }
             catch { }
