@@ -22,8 +22,7 @@ namespace ClubSocis_MongoDB
     /// </summary>
     public partial class MainWindow : Window
     {
-        MongoClient client = new MongoClient();
-        bool connectat = false;
+        MongoClient client;
 
         public MainWindow()
         {
@@ -34,20 +33,17 @@ namespace ClubSocis_MongoDB
         {
             try
             {
-                client = new MongoClient("mongodb://192.168.0.45:27017");
-                connectat = true;
+                client = new MongoClient("mongodb://192.168.0.46:27017");
+                lblEstat.Content = "Connectat al servidor mongoDB!";
             }
             catch { }
         }
 
         private void btnMostrarTot_Click(object sender, RoutedEventArgs e)
         {
-            if (connectat)
-            {
-                IMongoDatabase database = client.GetDatabase("Tennis");
-                var ape = database.GetCollection<Pista>("pista");
-                var ape2 = database.GetCollection<Soci>("soci");
-            }
+            //taulaDades.ItemsSource = 
+                cercarSocis();
+            taulaDades.ItemsSource = cercarPistes();
         }
 
         private void btnModLlibre_Click(object sender, RoutedEventArgs e)
@@ -73,6 +69,29 @@ namespace ClubSocis_MongoDB
         private void btnEliminarCategoria_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+
+
+        void cercarSocis()
+        {
+            if (client != null)
+            {
+                IMongoDatabase database = client.GetDatabase("Tennis");
+                IMongoCollection<Soci> socis = database.GetCollection<Soci>("soci");
+            }
+        }
+        
+        List<Pista> cercarPistes()
+        {
+            if (client != null)
+            {
+                IMongoDatabase database = client.GetDatabase("Tennis");
+                IMongoCollection<Pista> pistes = database.GetCollection<Pista>("pista");
+
+                return pistes.AsQueryable<Pista>().ToList();
+            }
+            return null;
         }
     }
 }
