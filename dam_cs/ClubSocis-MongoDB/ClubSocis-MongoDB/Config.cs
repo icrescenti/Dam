@@ -8,7 +8,8 @@ namespace ClubSocis_MongoDB
 {
     class Config
     {
-        //public string dbSocket = "192.168.0.46:27017";
-        public static string dbSocket = "localhost:27017";
+        //public static string dbSocket = "mongodb://192.168.0.46:27017";
+        //public static string dbSocket = "mongodb://localhost:27017";
+        public static string dbSocket = "mongodb+srv://terk:BailaMorena@cluster0.ibpnp.mongodb.net/Tennis?retryWrites=true&w=majority";
     }
 }

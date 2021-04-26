@@ -1,0 +1,1 @@
+Executar directament, he penjat la bdd al altas perque sigui mes flexible
