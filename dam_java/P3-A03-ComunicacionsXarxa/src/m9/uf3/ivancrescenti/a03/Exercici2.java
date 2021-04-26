@@ -12,13 +12,16 @@ public class Exercici2 {
 		System.out.println("========================================================");
 		System.out.println("Sortida per localhost");
 		try {
+
 			//LOCALHOST
 			dir = InetAddress.getByName("localhost");
-			provaMetodes(dir);//
+			provaMetodes(dir);
+
 			//URL www.google.es
 			System.out.println("====================================================");
 			System.out.println("Sortida per a URL: ");
-			dir = InetAddress.getByName("www.yahoo.es");
+			System.out.println("UrL seleccionada: ");
+			dir = InetAddress.getByName(escaner.nextLine());
 			provaMetodes(dir);
 		}
 		catch (UnknownHostException e1) {
@@ -32,6 +35,10 @@ public class Exercici2 {
 		try {
 			dir2 = InetAddress.getLocalHost();
 			System.out.println("\tMètode getLocalHost(): " + dir2);
+			System.out.println("\tMètode getHostName(): " + dir.getHostName());
+			System.out.println("\tMètode getAddress(): " + dir.getAddress());
+			System.out.println("\tMètode getAddress(): " + dir.getHostAddress());
+			System.out.println("\tMètode getCanonicalHostName(): " + dir.getCanonicalHostName());
 		}
 		catch (UnknownHostException e) {
 			e.printStackTrace();

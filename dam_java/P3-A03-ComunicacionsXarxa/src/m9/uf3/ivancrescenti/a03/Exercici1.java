@@ -30,8 +30,10 @@ public class Exercici1 {
 		try {
 			dir2 = InetAddress.getLocalHost();
 			System.out.println("\tMètode getLocalHost(): " + dir2);
-			
-			System.out.println("\tMetode getLocalHost(): " + InetAddress.getByName(dir));
+			System.out.println("\tMètode getHostName(): " + dir.getHostName());
+			System.out.println("\tMètode getAddress(): " + dir.getAddress());
+			System.out.println("\tMètode getAddress(): " + dir.getHostAddress());
+			System.out.println("\tMètode getCanonicalHostName(): " + dir.getCanonicalHostName());
 		}
 		catch (UnknownHostException e) {
 			e.printStackTrace();
