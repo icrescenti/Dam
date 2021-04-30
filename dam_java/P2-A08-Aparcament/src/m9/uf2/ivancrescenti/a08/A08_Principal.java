@@ -16,6 +16,7 @@ public class A08_Principal {
 		for (int i = 0; i<max_coxes; i++)
 		{
 			cotxes[i].start();
+			System.out.println("Cotxe matrícula " + cotxes[i].matricula + ": entra a la ciutat");
 		}
 	}
 }

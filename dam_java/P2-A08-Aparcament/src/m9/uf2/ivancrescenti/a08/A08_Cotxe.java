@@ -15,11 +15,39 @@ public class A08_Cotxe extends Thread {
 
 	public void run() {
         Random rand = new Random();
-        //Thread.sleep(rand.nextInt(10));
+        try {
+            Thread.sleep(rand.nextInt(10)*1000);
+            print("Cotxe matrícula " + matricula +": vol aparcar");
+            
+            if (parking.places_lliures > 0)
+            {
+                parking.ocuparPlaca();
+                print("Cotxe matrícula " + matricula +": ha entrat al pàrquing");
+
+                Thread.sleep(rand.nextInt(20)*1000);
+                parking.vuidarPlaca();
+
+                print("Cotxe matrícula " + matricula + ": surt de pàrquing");
+                print("Parquing: plaça alliberada, en queden " + parking.places_lliures);
+            }
+            else
+            {
+                print("Pàrquing: no queden places lliures t'has d'esperar");
+                Thread.sleep(rand.nextInt(1000));
+            }
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 	}
 
     String retornarMatricula()
     {
         return matricula;
+    }
+
+    void print(String msg)
+    {
+        System.out.println(msg);
     }
 }

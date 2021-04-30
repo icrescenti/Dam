@@ -10,7 +10,8 @@ public class A08_Parquing {
 
     void ocuparPlaca()
     {
-        places_lliures--;
+        if (places_lliures > 0)
+            places_lliures--;
     }
 
     void vuidarPlaca()
