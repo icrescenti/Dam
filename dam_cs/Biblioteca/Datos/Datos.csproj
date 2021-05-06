@@ -60,11 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="icrescentidbDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>icrescentidbDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Infrastructure\BibliotecaModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -81,6 +76,9 @@
       <DependentUpon>BibliotecaModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Categoria.cs">
+      <DependentUpon>BibliotecaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\database_firewall_rules.cs">
       <DependentUpon>BibliotecaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\Libro.cs">
@@ -110,17 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="icrescentidbDataSet.xsc">
-      <DependentUpon>icrescentidbDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="icrescentidbDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>icrescentidbDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="icrescentidbDataSet.xss">
-      <DependentUpon>icrescentidbDataSet.xsd</DependentUpon>
-    </None>
     <EntityDeploy Include="Infrastructure\BibliotecaModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BibliotecaModel.Designer.cs</LastGenOutput>
@@ -137,7 +124,6 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="Infrastructure\BibliotecaModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

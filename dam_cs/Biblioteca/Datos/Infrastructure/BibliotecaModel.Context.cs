@@ -32,6 +32,7 @@ namespace Datos.Infrastructure
         public virtual DbSet<LibrosUnidade> LibrosUnidades { get; set; }
         public virtual DbSet<Ubicacione> Ubicaciones { get; set; }
         public virtual DbSet<Venta> Ventas { get; set; }
+        public virtual DbSet<database_firewall_rules> database_firewall_rules { get; set; }
     
         public virtual ObjectResult<ObtenerLibrosConUnidades_Result> ObtenerLibrosConUnidades()
         {
