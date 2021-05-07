@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>LimitedInputUserLibrary</id>
+    <version>1.0.0</version>
+    <title>LimitedInputUserLibrary</title>
+    <authors>Ivan Crescenti</authors>
+    <owners>Angel Prat</owners>
+    <developmentDependency>true</developmentDependency>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <icon>Production_efficiency.png</icon>
+    <description>Control personalitzat</description>
+    <releaseNotes>Initial Version</releaseNotes>
+  </metadata>
+</package>

@@ -1,0 +1,12 @@
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\bin\Debug\LimitedInputUserLibrary.dll
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\bin\Debug\LimitedInputUserLibrary.pdb
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.csprojAssemblyReference.cache
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserControl.g.cs
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary_MarkupCompile.cache
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary_MarkupCompile.lref
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserControl.baml
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.g.resources
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.Properties.Resources.resources
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.csproj.GenerateResource.cache
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.dll
+C:\Users\aprat\source\repos\LimitedInputUserLibrary\LimitedInputUserLibrary\obj\Debug\LimitedInputUserLibrary.pdb

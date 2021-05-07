@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UltimaTasca", "UltimaTasca\UltimaTasca.csproj", "{86FDC83B-7BE6-4C51-A228-86279D2B6FB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86FDC83B-7BE6-4C51-A228-86279D2B6FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86FDC83B-7BE6-4C51-A228-86279D2B6FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86FDC83B-7BE6-4C51-A228-86279D2B6FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86FDC83B-7BE6-4C51-A228-86279D2B6FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E46E663-4365-4E99-9847-BE48F74A45FD}
+	EndGlobalSection
+EndGlobal
